@@ -1,4 +1,5 @@
 import builders.PizzaBuilder;
+import builders.RelatorioBuilder;
 import builders.VeiculoBuilder;
 
 public class Main {
@@ -36,5 +37,29 @@ public class Main {
         System.out.println(moto);
 
         // ---------------------------------------------
+
+        var simples = new RelatorioBuilder()
+                .setTitulo("Olá Mundo!")
+                .setCorpo("Lorem ipsum dolor sit amet.")
+                .build();
+
+        var completo = new RelatorioBuilder()
+                .setTitulo("PIzza")
+                .setCorpo("3 14 15 92 65 35 89 79 32...")
+                .setRodape("By: π")
+                .build();
+
+        System.out.println(simples);
+        System.out.println(completo);
+
+        System.out.println("--------------------------------------------");
+
+        try {
+            var errado = new RelatorioBuilder()
+                    .setCorpo("Hello?")
+                    .build();
+        } catch (IllegalStateException ex) {
+            System.out.println("[ERRO]: " + ex.getMessage());
+        }
     }
 }
