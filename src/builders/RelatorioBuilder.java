@@ -2,6 +2,11 @@ package builders;
 
 import entities.Relatorio;
 
+/**
+ * Aluno: Diego Garcia Perez Biguette
+ * RA: 1424
+ */
+
 public class RelatorioBuilder {
     private Relatorio relatorio = new Relatorio();
 

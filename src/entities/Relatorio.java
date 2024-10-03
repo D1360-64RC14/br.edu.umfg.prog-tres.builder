@@ -1,5 +1,10 @@
 package entities;
 
+/**
+ * Aluno: Diego Garcia Perez Biguette
+ * RA: 1424
+ */
+
 public class Relatorio {
     private String titulo;
     private String corpo;

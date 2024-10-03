@@ -2,6 +2,11 @@ package builders;
 
 import entities.Veiculo;
 
+/**
+ * Aluno: Diego Garcia Perez Biguette
+ * RA: 1424
+ */
+
 public class VeiculoBuilder {
     private Veiculo veiculo = new Veiculo();
 

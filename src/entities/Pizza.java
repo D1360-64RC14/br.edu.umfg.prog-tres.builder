@@ -1,5 +1,10 @@
 package entities;
 
+/**
+ * Aluno: Diego Garcia Perez Biguette
+ * RA: 1424
+ */
+
 public class Pizza {
     private String massa;
     private String tamanho;
